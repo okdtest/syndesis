@@ -1,6 +1,6 @@
 import i18n, { InitOptions } from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { en, it, ru } from './locales';
+import { en, it, ru, cn } from './locales';
 
 const options: InitOptions = {
   interpolation: {
@@ -42,6 +42,17 @@ const options: InitOptions = {
       integrations: ru.ru.modules.integrations,
       settings: ru.ru.modules.settings,
       shared: ru.ru.shared,
+    },
+    cn: {
+      apiClientConnectors: cn.cn.modules.apiClientConnectors,
+      app: cn.cn.app,
+      connections: cn.cn.modules.connections,
+      dashboard: cn.cn.modules.dashboard,
+      data: cn.cn.modules.data,
+      extensions: cn.cn.modules.extensions,
+      integrations: cn.cn.modules.integrations,
+      settings: cn.cn.modules.settings,
+      shared: cn.cn.shared,
     },
   },
 
